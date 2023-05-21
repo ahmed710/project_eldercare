@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.gui.controller.AjouterOrdonnanceController">
+   <children>
+      <TextField id="ID_patient" fx:id="TF_ID_patient" layoutX="74.0" layoutY="60.0" promptText="Nom patient" />
+      <TextField id="ID_medecin" fx:id="TF_ID_medecin" layoutX="74.0" layoutY="143.0" promptText="Nom medecin" />
+      <DatePicker fx:id="TF_Date" layoutX="371.0" layoutY="130.0" promptText="Date" />
+      <Label layoutX="81.0" layoutY="192.0" text="choisir liste medicaments" />
+      <Label layoutX="59.0" layoutY="31.0" text="inserer l' identifiant unique du patient" />
+      <Label layoutX="66.0" layoutY="122.0" text="insérer votre identifiant unique" />
+      <Label layoutX="371.0" layoutY="105.0" text="indiquer la date" />
+      <Button fx:id="BT_valider" layoutX="215.0" layoutY="313.0" mnemonicParsing="false" onAction="#ajouterOrdonnance" text="Enregistrer Ordonnance" />
+      <ComboBox fx:id="CB_ID_medicament" layoutX="84.0" layoutY="225.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

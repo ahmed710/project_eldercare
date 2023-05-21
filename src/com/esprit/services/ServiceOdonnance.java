@@ -13,6 +13,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
 
 /**
@@ -87,10 +88,37 @@ public class ServiceOdonnance implements IService<Ordonnance> {
             PreparedStatement pst = cnx.prepareStatement(req);
             ResultSet rs = pst.executeQuery();
             while (rs.next()) {
-                // Split the comma-separated string into a List<String>
+                
                 List<String> medicamentIds = Arrays.asList(rs.getString("ID_medicament").split(","));
-                list.add(new Ordonnance( rs.getString("ID_medicament"),
-                        rs.getInt("ID_patient"),rs.getInt("ID_medecin"),rs.getDate("Date")));
+                
+                //cast Array to list<string> + esm lcolonne fl paramétres
+                list.add(new Ordonnance( (List<String>) rs.getArray("ID_medicament"),
+                        rs.getInt("ID_patient"),rs.getInt("ID_medecin"),
+                        rs.getDate("Date")));
+            }
+        } catch (SQLException ex) {
+            System.out.println(ex.getMessage());
+        }
+
+        return list;
+    }
+    
+    
+    
+    public List<String> afficher_Medicaments() {
+        List<String> list = new ArrayList<>();
+
+        String req = "SELECT * FROM medicaments";
+        try {
+            PreparedStatement pst = cnx.prepareStatement(req);
+            ResultSet rs = pst.executeQuery();
+            while (rs.next()) {
+                
+                List<String> medicamentIds = Arrays.asList(rs.getString("ID_medicament").split(","));
+                
+                //cast Array to list<string> + esm lcolonne fl paramétres
+                list.addAll((Collection<? extends String>) rs.getArray("ID_medicament"));
+                
             }
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());

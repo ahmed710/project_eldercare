@@ -14,23 +14,12 @@ import java.util.List;
 
 public class Ordonnance {
     private int ID_ordonnance;
-    private List<String> ID_medicament; // Changed from String to List<String>
+    protected List<String> ID_medicament; // Changed from String to List<String>
     private int ID_patient;
     private int ID_medecin;
     private Date date;
     
-    public Ordonnance(String string, int ID_ordonnance, int ID_patient, Date date) {
-        this.ID_ordonnance = ID_ordonnance;
-        this.ID_medicament = ID_medicament;
-        this.ID_patient = ID_patient;
-        this.ID_medecin = ID_medecin;
-        this.date = date;
-    }
-
-    public Ordonnance() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-    
+  
     public List<String> getID_medicament() {
         return ID_medicament;
     }
@@ -70,6 +59,24 @@ public class Ordonnance {
     public void setDate(Date date) {
         this.date = date;
     }
+
+    public Ordonnance(List<String> ID_medicament, int ID_patient, int ID_medecin, Date date) {
+        this.ID_medicament = ID_medicament;
+        this.ID_patient = ID_patient;
+        this.ID_medecin = ID_medecin;
+        this.date = date;
+    }
+
+    public Ordonnance(int ID_patient, int ID_medecin, Date date) {
+        this.ID_patient = ID_patient;
+        this.ID_medecin = ID_medecin;
+        this.date = date;
+    }
+
+    public Ordonnance() {
+    }
+    
+    
     
     @Override
     public String toString() {

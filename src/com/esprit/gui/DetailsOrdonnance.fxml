@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="com.esprit.gui.controller.DetailsOrdonnanceController">
+   <children>
+      <Label fx:id="LB_ID_patient" layoutX="97.0" layoutY="88.0" text="ID_patient" />
+      <Label fx:id="LB_ID_médecin" layoutX="97.0" layoutY="158.0" text="ID_medecin" />
+   </children>
+</AnchorPane>

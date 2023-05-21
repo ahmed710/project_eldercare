@@ -24,9 +24,9 @@ public class EldercarePI {
     Ordonnance ordonance1 = new Ordonnance();
     ServiceOdonnance so1 = new ServiceOdonnance();
     
-    so1.ajouter(new Ordonnance("k15", 50, 80, Date.valueOf("2023-06-01")));
-    so1.ajouter(new Ordonnance("k15", 50, 80, Date.valueOf("2016-08-05")));
-   
+//    so1.ajouter(new Ordonnance("k15", 50, 80, Date.valueOf("2023-06-01")));
+//    so1.ajouter(new Ordonnance("k15", 50, 80, Date.valueOf("2016-08-05")));
+//   
     System.out.println(so1.afficher());   
 //    so1.supprimer(ordonance1);
     
@@ -36,11 +36,6 @@ public class EldercarePI {
     Traitement T1 = new Traitement();
     ServiceTraitement sT1 = new ServiceTraitement();
     
-    
-     
-      
-     
-      
     System.out.println(sT1.afficher());
     
     }
