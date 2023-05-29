@@ -67,23 +67,9 @@ public class AjoutCommandeController {
 
     @FXML
     void supprimercommande(ActionEvent event) {
-        ServiceCommande cm = new ServiceCommande();
-        Commande selectedUser = (Commande) tfaffichage.getSelectionModel().getSelectedItem();
-        if (selectedUser != null) {
-            cm.supprimer(selectedUser);
-        }
-        //pour actualiser le tableview
-        tableview();
 
     }
- 
-    
-    
-    
-    
-    
-    
-    
+
     private void tableview() {
         
         ServiceCommande cm = new ServiceCommande();
