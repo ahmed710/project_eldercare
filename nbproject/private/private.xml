@@ -3,6 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< Updated upstream
             <file>file:/C:/Users/Zouhour/Documents/NetBeansProjects/EldercarePI/src/com/esprit/entities/Traitement.java</file>
 <<<<<<< Updated upstream
             <file>file:/C:/Users/Zouhour/Documents/NetBeansProjects/EldercarePI/src/com/esprit/tests/EldercarePI.java</file>
@@ -23,6 +24,14 @@
             <file>file:/C:/Users/Zouhour/Documents/NetBeansProjects/EldercarePI/src/com/esprit/services/Medicament.java</file>
             <file>file:/C:/Users/Zouhour/Documents/NetBeansProjects/EldercarePI/src/com/esprit/entities/Ordonnance.java</file>
             <file>file:/C:/Users/Zouhour/Documents/NetBeansProjects/EldercarePI/src/com/esprit/tests/MainGUI.java</file>
+>>>>>>> Stashed changes
+=======
+            <file>file:/C:/Users/Zouhour/Documents/NetBeansProjects/EldercarePI/src/com/esprit/gui/AjouterOrdonnance.fxml</file>
+            <file>file:/C:/Users/Zouhour/Documents/NetBeansProjects/EldercarePI/src/com/esprit/gui/DetailsOrdonnance.fxml</file>
+            <file>file:/C:/Users/Zouhour/Documents/NetBeansProjects/EldercarePI/src/com/esprit/gui/controller/DetailsOrdonnanceController.java</file>
+            <file>file:/C:/Users/Zouhour/Documents/NetBeansProjects/EldercarePI/src/com/esprit/utils/DataSource.java</file>
+            <file>file:/C:/Users/Zouhour/Documents/NetBeansProjects/EldercarePI/src/com/esprit/gui/controller/AjouterOrdonnanceController.java</file>
+            <file>file:/C:/Users/Zouhour/Documents/NetBeansProjects/EldercarePI/src/com/esprit/entities/Ordonnance.java</file>
 >>>>>>> Stashed changes
         </group>
     </open-files>
