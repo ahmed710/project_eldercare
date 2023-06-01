@@ -24,13 +24,13 @@ public class ServiceCommande implements IServices<Commande>{
     
     private Connection cnx = DataSource.getInstance().getCnx();
     
-    public void ajouter(Commande commande) {
+    public void ajouter(Commande c) {
         try {
             String req = "INSERT INTO commande(adresse, Date_commande, etat) VALUES (?,?,?);";
             PreparedStatement pst = cnx.prepareStatement(req);
-            pst.setString(1, commande.getAdresse());
-            pst.setDate(2, Date.valueOf(commande.getDate_commande()));
-            pst.setString(3, commande.getEtat());
+            pst.setString(1, c.getAdresse());
+            pst.setDate(2, Date.valueOf(c.getDate_commande()));
+            pst.setString(3, c.getEtat());
             pst.executeUpdate();
             System.out.println("Commande ajoutée !");
         } catch (SQLException ex) {

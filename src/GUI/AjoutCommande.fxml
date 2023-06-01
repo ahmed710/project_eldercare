@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="452.0" prefWidth="846.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AjoutCommandeController">
+<AnchorPane id="AnchorPane" prefHeight="452.0" prefWidth="989.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AjoutCommandeController">
    <children>
       <Label layoutX="145.0" layoutY="32.0" text="Ajouter Commande">
          <font>
@@ -25,13 +25,12 @@
       <Button layoutX="86.0" layoutY="300.0" mnemonicParsing="false" onAction="#ajouterCommande" prefHeight="38.0" prefWidth="94.0" text="ajouter" />
       <Button layoutX="206.0" layoutY="300.0" mnemonicParsing="false" onAction="#modifiercommande" prefHeight="38.0" prefWidth="94.0" text="modifier" />
       <Button layoutX="321.0" layoutY="300.0" mnemonicParsing="false" onAction="#supprimercommande" prefHeight="38.0" prefWidth="94.0" text="supprimer" />
-      <TableView fx:id="tfaffichage" layoutX="494.0" prefHeight="452.0" prefWidth="399.0">
+      <TableView fx:id="tfaffichage" layoutX="494.0" prefHeight="452.0" prefWidth="475.0">
         <columns>
-          <TableColumn fx:id="idcol" prefWidth="33.0" text="ID" />
           <TableColumn fx:id="idpharmaciecol" prefWidth="99.0" text="ID Pharmacie" />
-            <TableColumn fx:id="datecol" prefWidth="138.0" text="Date de commande" />
-            <TableColumn fx:id="etatcol" prefWidth="94.0" text="Etat" />
-            <TableColumn fx:id="adressecol" prefWidth="33.0" text="Adresse" />
+            <TableColumn fx:id="datecol" onEditCommit="#modifierDate" prefWidth="138.0" text="Date de commande" />
+            <TableColumn fx:id="etatcol" onEditCommit="#modifierEtat" prefWidth="94.0" text="Etat" />
+            <TableColumn fx:id="adressecol" onEditCommit="#modifierAdresse" prefWidth="94.0" text="Adresse" />
         </columns>
       </TableView>
    </children>
