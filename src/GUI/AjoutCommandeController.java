@@ -84,6 +84,8 @@ public class AjoutCommandeController implements Initializable {
     private Button modifButtom;
     @FXML
     private Button suppButtom;
+    @FXML
+    private Button imprimebutton;
     
     
     
@@ -115,6 +117,7 @@ public class AjoutCommandeController implements Initializable {
         comboboxPhar();
         modifButtom.setDisable(true);
         suppButtom.setDisable(true);
+        imprimebutton.setDisable(true);
         tableview();
         //tableview2();
         // TODO
@@ -227,7 +230,8 @@ public class AjoutCommandeController implements Initializable {
             cm.supprimer(selectedCommande);
         }
         suppButtom.setDisable(true);        
-        modifButtom.setDisable(true);        
+        modifButtom.setDisable(true);
+        imprimebutton.setDisable(true);        
         
         
     }
@@ -249,6 +253,9 @@ public class AjoutCommandeController implements Initializable {
     alert.setHeaderText(null);
     alert.setContentText("La commande a été imprimée avec succès.");
     alert.showAndWait();
+        suppButtom.setDisable(true);        
+        modifButtom.setDisable(true);
+        imprimebutton.setDisable(true);   
         
         // clear all fields
         VidF();
@@ -284,19 +291,13 @@ public class AjoutCommandeController implements Initializable {
                 
         modifButtom.setDisable(true);        
         suppButtom.setDisable(true);
+        imprimebutton.setDisable(true);
         
         tableview();
     }
 
     @FXML
-    private void prime_selected(MouseEvent event) {
-        /*int index = tableau_prime_2.getSelectionModel().getSelectedIndex();
-        prime h = tableau_prime_2.getSelectionModel().getSelectedItem();
-        id_prime_textfield_2.setText(id_prime_colonne_2.getCellData(index).toString());
-        type_prime_textfield_2.setText(type_prime_colonne_2.getCellData(index));
-        valeur_prime_textfield_2.setText(valeur_prime_colonne_2.getCellData(index).toString());*/
-        
-        
+    private void prime_selected(MouseEvent event) {   
         int index = tvafficher.getSelectionModel().getSelectedIndex();
         Commande selectedCommande = (Commande) tvafficher.getSelectionModel().getSelectedItem();
         
@@ -324,6 +325,7 @@ public class AjoutCommandeController implements Initializable {
         
         modifButtom.setDisable(false);
         suppButtom.setDisable(false);
+        imprimebutton.setDisable(false);
         
     }    
 

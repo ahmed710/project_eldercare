@@ -21,7 +21,7 @@
       <TextField fx:id="tfnom" layoutX="175.0" layoutY="111.0" />
       <TextField fx:id="tfadresse" layoutX="176.0" layoutY="153.0" />
       <TextField fx:id="tftelephone" layoutX="176.0" layoutY="196.0" />
-      <Button layoutX="66.0" layoutY="283.0" mnemonicParsing="false" onAction="#ajouterpharmacie" prefHeight="30.0" prefWidth="76.0" text="Ajouter" />
+      <Button layoutX="153.0" layoutY="283.0" mnemonicParsing="false" onAction="#ajouterpharmacie" prefHeight="30.0" prefWidth="76.0" text="Ajouter" />
       <Button layoutX="242.0" layoutY="283.0" mnemonicParsing="false" onAction="#supprimerpharmacie" text="Supprimer" />
       <TableView fx:id="tvafficher" layoutX="455.0" layoutY="3.0" prefHeight="394.0" prefWidth="345.0">
         <columns>
@@ -30,5 +30,6 @@
             <TableColumn fx:id="telephonecol" onEditCommit="#modTele" prefWidth="118.39996337890625" text="Telephone" />
         </columns>
       </TableView>
+      <Button layoutX="81.0" layoutY="283.0" mnemonicParsing="false" onAction="#viderFields" text="Vider" />
    </children>
 </AnchorPane>

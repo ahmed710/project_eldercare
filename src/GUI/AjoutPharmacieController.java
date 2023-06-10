@@ -85,6 +85,7 @@ public class AjoutPharmacieController implements Initializable{
         else {
             ph.ajouter(new Pharmacie(nom,adresse,telephone));      
         tableview();
+        VidF();
         }
         
         
@@ -184,7 +185,15 @@ public class AjoutPharmacieController implements Initializable{
         
     }
 
-
+    private void VidF() {
+        tfadresse.setText("");
+        tfnom.setText("");
+        tftelephone.setText("");
+    }
+    @FXML
+    private void viderFields(ActionEvent event) {
+        VidF();        
+    }
 
     
     
