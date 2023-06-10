@@ -1,36 +1,35 @@
-package Entities;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package entities;
 
 /**
  *
- * @author houcem
+ * @author Wimbee018
  */
 public class Pharmacie {
     
-    private String adresse_pha;
     private int ID_pharmacie;
     private String nom_pharmacie;
+    private String adresse_pha;
     private String telephone;
 
-
-    public Pharmacie(String adresse_pha, String nom_pharmacie, String telephone) {
-        this.adresse_pha = adresse_pha;
+    public Pharmacie(String nom_pharmacie, String adresse_pha, String telephone) {
         this.nom_pharmacie = nom_pharmacie;
+        this.adresse_pha = adresse_pha;
         this.telephone = telephone;
     }
 
-    public Pharmacie(String adresse_pha, int ID_pharmacie, String nom_pharmacie, String telephone) {
-        this.adresse_pha = adresse_pha;
+    public Pharmacie(int ID_pharmacie, String nom_pharmacie, String adresse_pha, String telephone) {
         this.ID_pharmacie = ID_pharmacie;
         this.nom_pharmacie = nom_pharmacie;
+        this.adresse_pha = adresse_pha;
         this.telephone = telephone;
     }
 
-    public String getAdresse_pha() {
-        return adresse_pha;
-    }
-
-    public void setAdresse_pha(String adresse_pha) {
-        this.adresse_pha = adresse_pha;
+    public Pharmacie(String nom_pharmacie) {
+                this.nom_pharmacie = nom_pharmacie;
     }
 
     public int getID_pharmacie() {
@@ -49,6 +48,14 @@ public class Pharmacie {
         this.nom_pharmacie = nom_pharmacie;
     }
 
+    public String getAdresse_pha() {
+        return adresse_pha;
+    }
+
+    public void setAdresse_pha(String adresse_pha) {
+        this.adresse_pha = adresse_pha;
+    }
+
     public String getTelephone() {
         return telephone;
     }
@@ -59,8 +66,8 @@ public class Pharmacie {
 
     @Override
     public String toString() {
-        return "Pharmacie{" + "adresse_pha=" + adresse_pha + ", ID_pharmacie=" + ID_pharmacie +", nom_pharmacie=" + nom_pharmacie + ", telephone=" + telephone + '}';
+        return "Pharmacie{" + "ID_pharmacie=" + ID_pharmacie + ", nom_pharmacie=" + nom_pharmacie + ", adresse_pha=" + adresse_pha + ", telephone=" + telephone + '}';
     }
     
-
+    
 }

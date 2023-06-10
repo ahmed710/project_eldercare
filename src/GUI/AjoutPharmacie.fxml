@@ -8,29 +8,27 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="485.0" prefWidth="714.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AjoutPharmacieController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AjoutPharmacieController">
    <children>
-      <Label layoutX="158.0" layoutY="37.0" prefHeight="58.0" prefWidth="261.0" text=" Ajouter Pharmacie" textAlignment="CENTER">
+      <Label layoutX="19.0" layoutY="14.0" text="Pharmacie">
          <font>
-            <Font size="29.0" />
+            <Font size="34.0" />
          </font>
       </Label>
-      <Label layoutX="68.0" layoutY="119.0" text="Adresse Pharmacie:" />
-      <Label layoutX="68.0" layoutY="170.0" text="Nom Pharmacie:" />
-      <Label layoutX="68.0" layoutY="217.0" text="Telephone:" />
-      <TextField fx:id="tfadressepharmacie" layoutX="226.0" layoutY="115.0" />
-      <TextField fx:id="tfnompharmacie" layoutX="226.0" layoutY="166.0" />
-      <TextField fx:id="tftelephone" layoutX="226.0" layoutY="213.0" />
-      <Button layoutX="54.0" layoutY="304.0" mnemonicParsing="false" onAction="#ajouterpharmacie" prefHeight="43.0" prefWidth="117.0" text="AJOUTER" />
-      <TableView fx:id="taffichage" layoutX="477.0" prefHeight="485.0" prefWidth="466.0">
+      <Label layoutX="19.0" layoutY="115.0" text="Nom Pharmacie" />
+      <Label layoutX="19.0" layoutY="157.0" text="Adresse Pharmacie" />
+      <Label layoutX="19.0" layoutY="200.0" text="Telephone" />
+      <TextField fx:id="tfnom" layoutX="175.0" layoutY="111.0" />
+      <TextField fx:id="tfadresse" layoutX="176.0" layoutY="153.0" />
+      <TextField fx:id="tftelephone" layoutX="176.0" layoutY="196.0" />
+      <Button layoutX="66.0" layoutY="283.0" mnemonicParsing="false" onAction="#ajouterpharmacie" prefHeight="30.0" prefWidth="76.0" text="Ajouter" />
+      <Button layoutX="242.0" layoutY="283.0" mnemonicParsing="false" onAction="#supprimerpharmacie" text="Supprimer" />
+      <TableView fx:id="tvafficher" layoutX="455.0" layoutY="3.0" prefHeight="394.0" prefWidth="345.0">
         <columns>
-          <TableColumn fx:id="idcol" prefWidth="75.0" text="ID" />
-          <TableColumn fx:id="adressecol" prefWidth="130.0" text="Adresse pharmacie" />
-            <TableColumn fx:id="nomcol" prefWidth="131.0" text="Nom Pharmacie" />
-            <TableColumn fx:id="telephonecol" prefWidth="100.0" text="Telephone" />
+          <TableColumn fx:id="nomcol" onEditCommit="#modNom" prefWidth="98.39996337890625" text="Nom Pharmacie" />
+          <TableColumn fx:id="adressecol" onEditCommit="#modAdd" prefWidth="118.39996337890625" text="Adresse Pharmacie" />
+            <TableColumn fx:id="telephonecol" onEditCommit="#modTele" prefWidth="118.39996337890625" text="Telephone" />
         </columns>
       </TableView>
-      <Button layoutX="204.0" layoutY="304.0" mnemonicParsing="false" onAction="#modifierpharmacie" prefHeight="43.0" prefWidth="117.0" text="Modifier" />
-      <Button layoutX="346.0" layoutY="304.0" mnemonicParsing="false" onAction="#supprimerpharmacie" prefHeight="43.0" prefWidth="117.0" text="Supprimer" />
    </children>
 </AnchorPane>
