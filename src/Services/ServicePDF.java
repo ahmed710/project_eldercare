@@ -49,11 +49,11 @@ public class ServicePDF {
             table.setWidths(new int[]{1, 3});
             
             // Add details as table cells
-            table.addCell(createTableCell("ID Commande"));
-            table.addCell(createTableCell(String.valueOf(c.getID_commande())));
+            //table.addCell(createTableCell("ID Commande"));
+           // table.addCell(createTableCell(String.valueOf(c.getID_commande())));
             
-            table.addCell(createTableCell("ID Pharmacie"));
-            table.addCell(createTableCell(String.valueOf(c.getID_pharmacie())));
+           // table.addCell(createTableCell("ID Pharmacie"));
+            //table.addCell(createTableCell(String.valueOf(c.getID_pharmacie())));
             
             table.addCell(createTableCell("Adresse"));
             table.addCell(createTableCell(c.getAdresse()));
@@ -87,25 +87,44 @@ public class ServicePDF {
             meds= sc.getMedFromComm(c);
             
             // Create a table for the medications
-        PdfPTable medTable = new PdfPTable(4);
+        PdfPTable medTable = new PdfPTable(3);
         medTable.setWidthPercentage(80);
-        medTable.setWidths(new int[]{1, 2, 1, 1});
+        medTable.setWidths(new int[]{1, 2, 1});
 
         // Add table headers
-        medTable.addCell(createTableCell("ID Médicament"));
+        //medTable.addCell(createTableCell("ID Médicament"));
         medTable.addCell(createTableCell("Nom Médicament"));
         medTable.addCell(createTableCell("Prix"));
         medTable.addCell(createTableCell("Catégorie"));
 
         // Add medications as table cells
         for (Medicament med : meds) {
-            medTable.addCell(createTableCell(String.valueOf(med.getID_medicament())));
+           // medTable.addCell(createTableCell(String.valueOf(med.getID_medicament())));
             medTable.addCell(createTableCell(med.getNom_medicament()));
             medTable.addCell(createTableCell(String.valueOf(med.getPrix())));
             medTable.addCell(createTableCell(med.getCategorie()));
         }
-
-        doc.add(medTable);
+            doc.add(medTable);
+            doc.add(new Paragraph("\n"));
+            doc.add(new Paragraph("\n"));
+            
+            // Create a title ordonnance
+            Paragraph total = new Paragraph("TOTALE", FontFactory.getFont(FontFactory.HELVETICA_BOLD, 14));
+            title.setAlignment(Element.ALIGN_CENTER);
+            doc.add(total);
+            doc.add(new Paragraph("\n"));
+        PdfPTable totale = new PdfPTable(1);
+        totale.setWidthPercentage(80);
+        totale.setWidths(new int[]{1});
+        totale.addCell(createTableCell("Prix Totale"));
+        float tot=0;
+        for (Medicament med : meds) {
+           // medTable.addCell(createTableCell(String.valueOf(med.getID_medicament())));
+           tot+=med.getPrix();
+        }
+        totale.addCell(createTableCell(String.valueOf(tot)));
+        
+        doc.add(totale);
             
             doc.close();
             
