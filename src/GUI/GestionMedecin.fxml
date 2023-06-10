@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="610.0" prefWidth="1457.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AjoutMedecinController">
+   <children>
+      <Pane layoutX="14.0" layoutY="70.0" prefHeight="520.0" prefWidth="439.0">
+         <children>
+            <Label layoutX="66.0" layoutY="26.0" text="Nom :" />
+            <TextField fx:id="tfNom" layoutX="220.0" layoutY="21.0" prefHeight="31.0" prefWidth="217.0" />
+            <Label layoutX="66.0" layoutY="82.0" text="Prénom :" />
+            <TextField fx:id="tfPrenom" layoutX="220.0" layoutY="77.0" prefHeight="31.0" prefWidth="217.0" />
+            <Label layoutX="62.0" layoutY="136.0" text="Sexe :" />
+            <RadioButton fx:id="rbHomme" layoutX="220.0" layoutY="136.0" selected="true" text="Homme" />
+            <RadioButton fx:id="rbFemme" layoutX="320.0" layoutY="136.0" text="Femme" />
+            <Label layoutX="61.0" layoutY="191.0" text="Adresse :" />
+            <TextField fx:id="tfAdresse" layoutX="216.0" layoutY="186.0" prefHeight="31.0" prefWidth="217.0" />
+            <Label layoutX="59.0" layoutY="248.0" text="Email :" />
+            <TextField fx:id="tfEmail" layoutX="216.0" layoutY="243.0" prefHeight="31.0" prefWidth="217.0" />
+            <Label layoutX="55.0" layoutY="359.0" text="Specialité :" />
+            <Button layoutX="125.0" layoutY="461.0" mnemonicParsing="false" onAction="#ajouterMedecin" prefHeight="46.0" prefWidth="50.0">
+               <graphic>
+                  <FontAwesomeIconView fill="#29be3c" glyphName="USER_PLUS" size="35" textAlignment="CENTER" wrappingWidth="35.79395246505737" />
+               </graphic></Button>
+            <Button layoutX="244.0" layoutY="461.0" mnemonicParsing="false" onAction="#supprimerMedecin" prefHeight="46.0" prefWidth="56.0">
+               <graphic>
+                  <FontAwesomeIconView fill="#e12134" glyphName="TRASH" size="35" />
+               </graphic></Button>
+            <ComboBox fx:id="cbspecialite" layoutX="216.0" layoutY="354.0" prefHeight="31.0" prefWidth="217.0" />
+            <Label layoutX="55.0" layoutY="308.0" text="Mot de passe :" />
+            <PasswordField fx:id="tfmotdepasse" layoutX="215.0" layoutY="303.0" prefHeight="31.0" prefWidth="217.0" />
+         </children>
+      </Pane>
+      <Label layoutX="141.0" layoutY="14.0" text="Ajouter médecin">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tfaffichage" layoutX="467.0" layoutY="70.0" prefHeight="520.0" prefWidth="913.0">
+         <columns>
+            <TableColumn fx:id="nomcol" onEditCommit="#modifierNom" prefWidth="91.0" text="Nom" />
+            <TableColumn fx:id="prenomcol" onEditCommit="#modifierPrenom" prefWidth="91.0" text="Prenom" />
+            <TableColumn fx:id="sexecol" prefWidth="89.0" text="Sexe" />
+            <TableColumn fx:id="emailcol" onEditCommit="#modifierEmail" prefWidth="190.0" text="Email" />
+            <TableColumn fx:id="adressecol" onEditCommit="#modifierAdresse" prefWidth="180.0" text="Adresse" />
+            <TableColumn fx:id="colspec" onEditCommit="#modifierSpecialité" prefWidth="270.0" text="specialité" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

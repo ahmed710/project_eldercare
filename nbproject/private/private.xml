@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/iheb/Documents/NetBeansProjects/eldercare2/src/Controllers/choixUtilisateurController.java</file>
+            <file>file:/C:/Users/iheb/Documents/NetBeansProjects/eldercare2/src/Controllers/LoginController.java</file>
+            <file>file:/C:/Users/iheb/Documents/NetBeansProjects/eldercare2/src/utils/DataSource.java</file>
+            <file>file:/C:/Users/iheb/Documents/NetBeansProjects/eldercare2/src/Controllers/AjoutMedecinController.java</file>
+            <file>file:/C:/Users/iheb/Documents/NetBeansProjects/eldercare2/src/Controllers/InscriptionMedecinController.java</file>
+            <file>file:/C:/Users/iheb/Documents/NetBeansProjects/eldercare2/src/Controllers/ChoixInscriptionController.java</file>
+            <file>file:/C:/Users/iheb/Documents/NetBeansProjects/eldercare2/src/Controllers/InscriptionPatientController.java</file>
+            <file>file:/C:/Users/iheb/Documents/NetBeansProjects/eldercare2/src/entities/Medecin.java</file>
+            <file>file:/C:/Users/iheb/Documents/NetBeansProjects/eldercare2/src/tests/MainGUI.java</file>
+            <file>file:/C:/Users/iheb/Documents/NetBeansProjects/eldercare2/src/Controllers/AjoutPatientController.java</file>
+            <file>file:/C:/Users/iheb/Documents/NetBeansProjects/eldercare2/src/entities/Patient.java</file>
+            <file>file:/C:/Users/iheb/Documents/NetBeansProjects/eldercare2/src/Controllers/CodeMotDePasseOublierController.java</file>
+            <file>file:/C:/Users/iheb/Documents/NetBeansProjects/eldercare2/src/Services/UserService.java</file>
+            <file>file:/C:/Users/iheb/Documents/NetBeansProjects/eldercare2/src/tests/Mainprog.java</file>
+            <file>file:/C:/Users/iheb/Documents/NetBeansProjects/eldercare2/src/GUI/ChoixInscription.fxml</file>
+            <file>file:/C:/Users/iheb/Documents/NetBeansProjects/eldercare2/src/entities/User.java</file>
+        </group>
+    </open-files>
+</project-private>

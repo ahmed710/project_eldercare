@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="772.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CodeMotDePasseOublierController">
+   <children>
+      <Label layoutX="156.0" layoutY="28.0" text="Mot de passe oublier">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Pane layoutX="42.0" layoutY="77.0" prefHeight="661.0" prefWidth="529.0">
+         <children>
+            <Label layoutX="79.0" layoutY="63.0" text="E-mail :" />
+            <TextField fx:id="tfEmail" layoutX="212.0" layoutY="58.0" prefHeight="31.0" prefWidth="253.0" promptText="exemple@XXX.com" />
+            <Button fx:id="Benvoyercode" layoutX="202.0" layoutY="157.0" mnemonicParsing="false" onAction="#envoyerCode" text="Envoyer le code" />
+            <Label fx:id="Emailprob" layoutX="79.0" layoutY="104.0" text="Cet E-mail n'a pas encore été enregistré" textFill="#f80505">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="79.0" layoutY="245.0" text="Code :" />
+            <TextField fx:id="tfCode" layoutX="212.0" layoutY="240.0" prefHeight="31.0" prefWidth="253.0" promptText="Exemple: 1111" />
+            <Label fx:id="codeProb" layoutX="81.0" layoutY="285.0" text="Code incorrecte" textFill="RED">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="BconfirmerCode" layoutX="195.0" layoutY="335.0" mnemonicParsing="false" onAction="#confirmercode" text="Confirmer le code" />
+            <Label fx:id="attend" layoutX="88.0" layoutY="124.0" text="vous devez attendre 2 minutes pour renvoyer le code" />
+            <Label layoutX="11.0" layoutY="413.0" text="Nouvelle mot de passe :" />
+            <Label layoutX="11.0" layoutY="492.0" text="Confirmer la nouvelle mot de passe :" />
+            <Button fx:id="Bconfimer" layoutX="214.0" layoutY="568.0" mnemonicParsing="false" onAction="#confirmerchangement" text="confirmer" />
+            <PasswordField fx:id="nouvellemdp" layoutX="265.0" layoutY="408.0" prefHeight="31.0" prefWidth="257.0" />
+            <PasswordField fx:id="confirmernmdp" layoutX="265.0" layoutY="487.0" prefHeight="31.0" prefWidth="257.0" />
+            <Label fx:id="mdpProb" layoutX="11.0" layoutY="520.0" text="votre mot de passe n'est pas conforme" textFill="RED">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
