@@ -18,7 +18,7 @@ public class DataSource {
     
     private static DataSource instance;
     
-    private final String URL = "jdbc:mysql://localhost:3306/eldercare";
+    private final String URL = "jdbc:mysql://localhost:3306/elderacre_db";
     private final String USERNAME = "root";
     private final String PASSWORD = "";
 

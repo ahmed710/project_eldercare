@@ -4,34 +4,50 @@
  */
 package projet_eldercare.entites;
 
+import projet_eldercare.utils.Classification_etiologique;
+import projet_eldercare.utils.Classification_fonctionelle;
+
 /**
  *
  * @author 21693
  */
 public class Maladie {
-    private String id_maladie ; 
+    private int ID_Maladie ; 
     private String titre ; 
     private String description  ;
-    private String categorie ; 
-    private String situation ; 
+    private String classification_etiologique ;  
+    private String classification_fonctionelle; 
 
-    public Maladie(String id_maladie, String titre, String description, String categorie, String situation) {
-        this.id_maladie = id_maladie;
+    public Maladie(int ID_Maladie, String titre, String description, String classification_etiologique, String classification_fonctionelle) {
+        this.ID_Maladie = ID_Maladie;
         this.titre = titre;
         this.description = description;
-        this.categorie = categorie;
-        this.situation = situation;
+        this.classification_etiologique = classification_etiologique;
+        this.classification_fonctionelle = classification_fonctionelle;
     }
+
+    public Maladie(int ID_Maladie, String titre) {
+        this.ID_Maladie = ID_Maladie;
+        this.titre = titre;
+    }
+
+    public Maladie(String titre, String description, String classification_etiologique, String classification_fonctionelle) {
+        this.titre = titre;
+        this.description = description;
+        this.classification_etiologique = classification_etiologique;
+        this.classification_fonctionelle = classification_fonctionelle;
+    }
+    
 
     public Maladie() {
     }
 
-    public String getId_maladie() {
-        return id_maladie;
+    public int getID_Maladie() {
+        return ID_Maladie;
     }
 
-    public void setId_maladie(String id_maladie) {
-        this.id_maladie = id_maladie;
+    public void setID_Maladie(int ID_Maladie) {
+        this.ID_Maladie = ID_Maladie;
     }
 
     public String getTitre() {
@@ -50,28 +66,29 @@ public class Maladie {
         this.description = description;
     }
 
-    public String getCategorie() {
-        return categorie;
+    public String getClassification_etiologique() {
+        return classification_etiologique;
     }
 
-    public void setCategorie(String categorie) {
-        this.categorie = categorie;
+    public void setClassification_etiologique(String classification_etiologique) {
+        this.classification_etiologique = classification_etiologique;
     }
 
-    public String getSituation() {
-        return situation;
+    public String getClassification_fonctionelle() {
+        return classification_fonctionelle;
     }
 
-    public void setSituation(String situation) {
-        this.situation = situation;
+    public void setClassification_fonctionelle(String classification_fonctionelle) {
+        this.classification_fonctionelle = classification_fonctionelle;
     }
 
     @Override
     public String toString() {
-        return "Maladie{" + "id_maladie=" + id_maladie + ", titre=" + titre + ", description=" + description + ", categorie=" + categorie + ", situation=" + situation + '}';
+        return "Maladie{" + "ID_Maladie=" + ID_Maladie + ", titre=" + titre + ", description=" + description + ", classification_etiologique=" + classification_etiologique + ", classification_fonctionelle=" + classification_fonctionelle + '}';
     }
 
-
+  
+    
     
     
 }

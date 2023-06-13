@@ -1,0 +1,39 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color:#ffffff;
+
+}
+#titreColumn{
+    -fx-color:#ACE2F5 ;
+}
+#descriptionColmn{
+    -fx-color:#ACE2F5 ;
+}
+#classification_etiologiqueColumn{
+    -fx-color:#ACE2F5 ;
+}
+#classification_fonctionelleColumn{
+    -fx-color:#ACE2F5 ;
+}
+#button1{
+    -fx-color:#ACE2F5 ;
+    -fx-font-color:white ;
+}
+#button2{
+    -fx-color:#FF8EAF ;
+    -fx-font-color:white ;
+
+}
+#myChoiceBox1{
+    -fx-color:#ACE2F5 ;
+}
+#myChoiceBox2{
+    -fx-color:#ACE2F5 ;
+}
+#backButton{
+    -fx-color:#ACE2F5;
+}
+

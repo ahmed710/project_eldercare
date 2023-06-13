@@ -1,0 +1,43 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 6 juin 2023, 21:19:55
+    Author     : 21693
+*/
+
+.mainFxmlClass {
+    -fx-background-color:#ffffff;
+   
+}
+#organeComboBox{
+     -fx-color:#ACE2F5 
+}
+#Ajouter{
+     -fx-color:#ACE2F5 
+}
+#supprimer{
+     -fx-color:#ACE2F5 
+}
+#titreColumn{
+     -fx-color:#ACE2F5
+}
+#descriptionColmn{
+     -fx-color:#ACE2F5
+}
+#parjourColumn{
+     -fx-color:#ACE2F5
+}
+#parsemaineColumn{
+     -fx-color:#ACE2F5
+}
+#dureeColumn{
+     -fx-color:#ACE2F5
+}
+#organeColumn1{
+     -fx-color:#ACE2F5
+}
+#backButton{
+    -fx-color:#ACE2F5;
+}

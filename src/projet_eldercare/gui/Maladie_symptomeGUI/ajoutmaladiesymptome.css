@@ -1,0 +1,35 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color:#ffffff;
+
+}
+#idMaladieColumn{
+    -fx-color:#ACE2F5;
+}
+#idSymptome{
+    -fx-color:#ACE2F5;
+}
+
+#tauxCorrcolumn{
+    -fx-color:#ACE2F5;
+}
+
+#ajouter{
+    -fx-color:#ACE2F5;
+}
+#supprimer{
+    -fx-color:#ACE2F5;
+}
+#backButton{
+    -fx-color:#ACE2F5;
+}
+
+#titreColumnSymptome{
+    -fx-color:#ACE2F5;
+}
+#titreColumn{
+    -fx-color:#ACE2F5;
+}

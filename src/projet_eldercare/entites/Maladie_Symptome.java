@@ -9,32 +9,51 @@ package projet_eldercare.entites;
  * @author 21693
  */
 public class Maladie_Symptome {
-         private String idSymptome ;  
-         private String id_maladie ;
+         private int ID_Symptome ;  
+         private int ID_Maladie ;
+         private float taux_de_correspondance ; 
 
-    public Maladie_Symptome(String idSymptome, String id_maladie) {
-        this.idSymptome = idSymptome;
-        this.id_maladie = id_maladie;
+    public Maladie_Symptome(int ID_Symptome, int ID_Maladie, float taux_de_correspondance) {
+        this.ID_Symptome = ID_Symptome;
+        this.ID_Maladie = ID_Maladie;
+        this.taux_de_correspondance = taux_de_correspondance;
     }
 
     public Maladie_Symptome() {
     }
 
-    public String getIdSymptome() {
-        return idSymptome;
+    public int getID_Symptome() {
+        return ID_Symptome;
     }
 
-    public void setIdSymptome(String idSymptome) {
-        this.idSymptome = idSymptome;
+    public void setID_Symptome(int ID_Symptome) {
+        this.ID_Symptome = ID_Symptome;
     }
 
-    public String getId_maladie() {
-        return id_maladie;
+    public int getID_Maladie() {
+        return ID_Maladie;
     }
 
-    public void setId_maladie(String id_maladie) {
-        this.id_maladie = id_maladie;
+    public void setID_Maladie(int ID_Maladie) {
+        this.ID_Maladie = ID_Maladie;
     }
-    
+
+    public float getTaux_de_correspondance() {
+        return taux_de_correspondance;
+    }
+
+    public void setTaux_de_correspondance(float taux_de_correspondance) {
+        this.taux_de_correspondance = taux_de_correspondance;
+    }
+
+    public Maladie getMaladie() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    public Symptome getSymptome() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+  
     
 }

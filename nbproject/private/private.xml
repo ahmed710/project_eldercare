@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/21693/Desktop/partie_ahmed/Projet_Eldercare/src/projet_eldercare/utils/Organe.java</file>
+            <file>file:/C:/Users/21693/Desktop/partie_ahmed/Projet_Eldercare/src/projet_eldercare/gui/SymptomeGUI/AjoutSymptomeController.java</file>
+            <file>file:/C:/Users/21693/Desktop/partie_ahmed/Projet_Eldercare/src/projet_eldercare/gui/WelcomeGUI/welcome.css</file>
+            <file>file:/C:/Users/21693/Desktop/partie_ahmed/Projet_Eldercare/src/projet_eldercare/gui/MaladieGUI/alertStyles.css</file>
+            <file>file:/C:/Users/21693/Desktop/partie_ahmed/Projet_Eldercare/src/projet_eldercare/gui/Maladie_symptomeGUI/ajoutmaladiesymptome.css</file>
+            <file>file:/C:/Users/21693/Desktop/partie_ahmed/Projet_Eldercare/src/projet_eldercare/sevices/ServiceSymptome.java</file>
+            <file>file:/C:/Users/21693/Desktop/partie_ahmed/Projet_Eldercare/src/projet_eldercare/gui/Maladie_symptomeGUI/AjoutMaladieSymptome.fxml</file>
+            <file>file:/C:/Users/21693/Desktop/partie_ahmed/Projet_Eldercare/src/projet_eldercare/utils/Classification_etiologique.java</file>
+            <file>file:/C:/Users/21693/Desktop/partie_ahmed/Projet_Eldercare/src/projet_eldercare/gui/MaladieGUI/AjoutMaladie.fxml</file>
+            <file>file:/C:/Users/21693/Desktop/partie_ahmed/Projet_Eldercare/src/projet_eldercare/sevices/Service_Maladie_Symptome.java</file>
+            <file>file:/C:/Users/21693/Desktop/partie_ahmed/Projet_Eldercare/src/projet_eldercare/sevices/ServicePDF.java</file>
+            <file>file:/C:/Users/21693/Desktop/partie_ahmed/Projet_Eldercare/src/projet_eldercare/utils/Classification_fonctionelle.java</file>
+            <file>file:/C:/Users/21693/Desktop/partie_ahmed/Projet_Eldercare/src/projet_eldercare/gui/MaladieGUI/AjoutMaladieController.java</file>
+            <file>file:/C:/Users/21693/Desktop/partie_ahmed/Projet_Eldercare/src/projet_eldercare/gui/Maladie_symptomeGUI/AjoutMaladieSymptomeController.java</file>
+            <file>file:/C:/Users/21693/Desktop/partie_ahmed/Projet_Eldercare/src/projet_eldercare/entites/Symptome.java</file>
+            <file>file:/C:/Users/21693/Desktop/partie_ahmed/Projet_Eldercare/src/projet_eldercare/gui/WelcomeGUI/Welcome1.fxml</file>
+            <file>file:/C:/Users/21693/Desktop/partie_ahmed/Projet_Eldercare/src/projet_eldercare/test/TestGUI.java</file>
+            <file>file:/C:/Users/21693/Desktop/partie_ahmed/Projet_Eldercare/src/projet_eldercare/test/MainProg.java</file>
+            <file>file:/C:/Users/21693/Desktop/partie_ahmed/Projet_Eldercare/src/projet_eldercare/entites/Maladie.java</file>
+            <file>file:/C:/Users/21693/Desktop/partie_ahmed/Projet_Eldercare/src/projet_eldercare/gui/WelcomeGUI/WelcomeController.java</file>
+            <file>file:/C:/Users/21693/Desktop/partie_ahmed/Projet_Eldercare/src/projet_eldercare/gui/SymptomeGUI/AjoutSymptome.fxml</file>
+            <file>file:/C:/Users/21693/Desktop/partie_ahmed/Projet_Eldercare/src/projet_eldercare/gui/SymptomeGUI/AjoutSymptome.css</file>
+            <file>file:/C:/Users/21693/Desktop/partie_ahmed/Projet_Eldercare/src/projet_eldercare/gui/MaladieGUI/ajoutmaladie.fxml.css</file>
+            <file>file:/C:/Users/21693/Desktop/partie_ahmed/Projet_Eldercare/src/projet_eldercare/sevices/ServiceMaladie.java</file>
+            <file>file:/C:/Users/21693/Desktop/partie_ahmed/Projet_Eldercare/src/projet_eldercare/entites/Maladie_Symptome.java</file>
+        </group>
+    </open-files>
+</project-private>

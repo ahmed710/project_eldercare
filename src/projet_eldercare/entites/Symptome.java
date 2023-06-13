@@ -4,41 +4,58 @@
  */
 package projet_eldercare.entites;
 
+import projet_eldercare.utils.Organe;
+
 /**
  *
  * @author 21693
  */
+
+
+
 public class Symptome {
-    private String idSymptome ;
+    private int ID_Symptome ;
     private String titre ; 
     private String description ; 
-    private int frequence ; 
-    private int duree ; 
+    private int frequenceParJour ; 
+    private int frequenceParSemaine ; 
+    private float duree ; 
     private String organe ; 
 
-    public Symptome(String idSymptome, String titre, String description, int frequence, int duree, String organe) {
-        this.idSymptome = idSymptome;
+    public Symptome(int ID_Symptome, String titre, String description, int frequenceParJour, int frequenceParSemaine, float duree, String organe) {
+        this.ID_Symptome = ID_Symptome;
         this.titre = titre;
         this.description = description;
-        this.frequence = frequence;
+        this.frequenceParJour = frequenceParJour;
+        this.frequenceParSemaine = frequenceParSemaine;
         this.duree = duree;
         this.organe = organe;
-    }
-
-    @Override
-    public String toString() {
-        return "Symptome{" + "idSymptome=" + idSymptome + ", titre=" + titre + ", description=" + description + ", frequence=" + frequence + ", duree=" + duree + ", organe=" + organe + '}';
     }
 
     public Symptome() {
     }
 
-    public String getIdSymptome() {
-        return idSymptome;
+    public Symptome(String titre, String description, int frequenceParJour, int frequenceParSemaine, float duree, String organe) {
+        this.titre = titre;
+        this.description = description;
+        this.frequenceParJour = frequenceParJour;
+        this.frequenceParSemaine = frequenceParSemaine;
+        this.duree = duree;
+        this.organe = organe;
     }
 
-    public void setIdSymptome(String ID_Symptome) {
-        this.idSymptome = ID_Symptome;
+    public Symptome(int ID_Symptome, String titre) {
+        this.ID_Symptome= ID_Symptome ; 
+       this.titre = titre;
+    }
+
+
+    public int getID_Symptome() {
+        return ID_Symptome;
+    }
+
+    public void setID_Symptome(int ID_Symptome) {
+        this.ID_Symptome = ID_Symptome;
     }
 
     public String getTitre() {
@@ -57,19 +74,27 @@ public class Symptome {
         this.description = description;
     }
 
-    public int getFrequence() {
-        return frequence;
+    public int getFrequenceParJour() {
+        return frequenceParJour;
     }
 
-    public void setFrequence(int frequence) {
-        this.frequence = frequence;
+    public void setFrequenceParJour(int frequenceParJour) {
+        this.frequenceParJour = frequenceParJour;
     }
 
-    public int getDuree() {
+    public int getFrequenceParSemaine() {
+        return frequenceParSemaine;
+    }
+
+    public void setFrequenceParSemaine(int frequenceParSemaine) {
+        this.frequenceParSemaine = frequenceParSemaine;
+    }
+
+    public float getDuree() {
         return duree;
     }
 
-    public void setDuree(int duree) {
+    public void setDuree(float duree) {
         this.duree = duree;
     }
 
@@ -81,5 +106,11 @@ public class Symptome {
         this.organe = organe;
     }
 
+    @Override
+    public String toString() {
+        return "Symptome{" + "ID_Symptome=" + ID_Symptome + ", titre=" + titre + ", description=" + description + ", frequenceParJour=" + frequenceParJour + ", frequenceParSemaine=" + frequenceParSemaine + ", duree=" + duree + ", organe=" + organe + '}';
+    }
+
+   
 
 }
