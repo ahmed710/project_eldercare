@@ -1,0 +1,14 @@
+[pack]
+	buildbitmaps = false
+[core]
+	symlinks = false
+	repositoryformatversion = 0
+	filemode = false
+	logallrefupdates = true
+	bare = false
+[remote "origin"]
+	url = https://RouissiZouhour@github.com/ahmed710/project_eldercare.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "Zouhour"]
+	remote = origin
+	merge = refs/heads/Zouhour
