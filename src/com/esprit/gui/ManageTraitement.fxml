@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="425.0" prefWidth="778.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.gui.controller.ManageTraitementController">
+   <children>
+      <TableView fx:id="TV_Traitements" layoutX="291.0" layoutY="62.0" prefHeight="269.0" prefWidth="487.0">
+        <columns>
+          <TableColumn fx:id="TC_medicaments_traitement" prefWidth="75.0" text="Medicament" />
+          <TableColumn fx:id="TC_nbrPrises_Traitement" prefWidth="116.0" text="nombre de prises" />
+            <TableColumn fx:id="TC_desc_traitement" prefWidth="72.0" text="description" />
+            <TableColumn fx:id="TC_date_debut" text="Date début" />
+            <TableColumn fx:id="TC_Ordonnance_Traitement" prefWidth="83.0" text="Ordonnance" />
+            <TableColumn fx:id="TC_date_fin" prefWidth="83.0" text="Date fin" />
+        </columns>
+      </TableView>
+      <TextField fx:id="TF_nbr_prises" layoutX="134.0" layoutY="164.0" />
+      <TextField fx:id="TF_descTraitement" layoutX="134.0" layoutY="197.0" prefHeight="51.0" prefWidth="149.0" />
+      <DatePicker fx:id="DateDébuut_Traitement" layoutX="175.0" layoutY="262.0" prefHeight="25.0" prefWidth="112.0" />
+      <DatePicker fx:id="DateFin_Traitement" layoutX="174.0" layoutY="303.0" prefHeight="25.0" prefWidth="112.0" />
+      <Button fx:id="BT_enregistrer_Traitement" layoutX="33.0" layoutY="371.0" mnemonicParsing="false" onAction="#ajouterTraitement" text="Enregistrer" />
+      <Button fx:id="BT_supprimer_Traitement" layoutX="172.0" layoutY="371.0" mnemonicParsing="false" onAction="#supprimerTraitement" text="Supprimer" />
+      <ComboBox fx:id="CMB_ordonnaance" layoutX="134.0" layoutY="87.0" prefWidth="150.0" />
+      <ComboBox fx:id="CMB_médicaments" layoutX="134.0" layoutY="128.0" prefWidth="150.0" />
+      <Label layoutX="49.0" layoutY="35.0" prefHeight="16.0" prefWidth="172.0" text="Ajouter un traitement" textFill="#3fd6d1" wrapText="true">
+         <font>
+            <Font name="Cooper Black" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="8.0" layoutY="91.0" prefHeight="16.0" prefWidth="172.0" text="Ordonnance" textFill="#3fd6d1" wrapText="true">
+         <font>
+            <Font name="Cooper Black" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="8.0" layoutY="132.0" prefHeight="16.0" prefWidth="172.0" text="Médicaments" textFill="#3fd6d1" wrapText="true">
+         <font>
+            <Font name="Cooper Black" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="2.0" layoutY="168.0" prefHeight="16.0" prefWidth="133.0" text="Nombre de prises" textFill="#3fd6d1" wrapText="true">
+         <font>
+            <Font name="Cooper Black" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="8.0" layoutY="215.0" prefHeight="16.0" prefWidth="172.0" text="Description" textFill="#3fd6d1" wrapText="true">
+         <font>
+            <Font name="Cooper Black" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutY="267.0" prefHeight="16.0" prefWidth="172.0" text="Date début traitement" textFill="#3fd6d1" wrapText="true">
+         <font>
+            <Font name="Cooper Black" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutY="308.0" prefHeight="16.0" prefWidth="172.0" text="Date fin traitement" textFill="#3fd6d1" wrapText="true">
+         <font>
+            <Font name="Cooper Black" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="BTN_back" layoutX="706.0" layoutY="23.0" mnemonicParsing="false" onAction="#retourVersOrdonnance" text="Retour" />
+   </children>
+</AnchorPane>

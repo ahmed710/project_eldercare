@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" accessibleRole="COMBO_BOX" prefHeight="400.0" prefWidth="752.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ManageOrdonnanceController">
+   <children>
+      <TableView fx:id="TV_tableOrdonnance" layoutX="315.0" layoutY="22.0" prefHeight="368.0" prefWidth="477.0">
+        <columns>
+          <TableColumn fx:id="TC_ID_ordonnance" prefWidth="132.0" text="Numéro Ordonnance" />
+          <TableColumn fx:id="TC_nom_patient" prefWidth="85.0" text="Nom Patient" />
+            <TableColumn fx:id="TC_nom_medecin" prefWidth="101.0" text="Nom médecin" />
+            <TableColumn fx:id="TC_médicamnts" minWidth="0.0" prefWidth="98.0" text="Médicaments" />
+            <TableColumn fx:id="TC_date" prefWidth="60.0" text="Date" />
+        </columns>
+      </TableView>
+      <Label layoutX="37.0" layoutY="123.0" text="Nom Patient" textFill="#3fd6d1">
+         <font>
+            <Font name="Cooper Black" size="13.0" />
+         </font></Label>
+      <Label layoutX="34.0" layoutY="169.0" text="Nom médecin" textFill="#3fd6d1">
+         <font>
+            <Font name="Cooper Black" size="13.0" />
+         </font></Label>
+      <Label layoutX="35.0" layoutY="86.0" text="Date" textFill="#3fd6d1">
+         <font>
+            <Font name="Cooper Black" size="13.0" />
+         </font></Label>
+      <Button fx:id="BT_supprimer" layoutX="596.0" layoutY="415.0" mnemonicParsing="false" onAction="#supprimerOrdonnance" prefHeight="22.0" prefWidth="178.0" text="Supprimer l'rodonnance" textFill="#070808e3" AnchorPane.bottomAnchor="34.0" AnchorPane.leftAnchor="596.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="415.0">
+         <font>
+            <Font name="Cooper Black" size="12.0" />
+         </font></Button>
+      <DatePicker fx:id="DP_date" layoutX="140.0" layoutY="81.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="41.0" layoutY="39.0" text="Ajouter une nouvelle ordonnance" textFill="#3fd6d1" wrapText="true">
+         <font>
+            <Font name="Cooper Black" size="14.0" />
+         </font></Label>
+      <Button fx:id="BT_ajouter" layoutX="356.0" layoutY="413.0" mnemonicParsing="false" onAction="#ajouterOrdonnance" text="Enregister l'ordonnance" textFill="#111011e5">
+         <font>
+            <Font name="Cooper Black" size="13.0" />
+         </font></Button>
+      <ComboBox fx:id="CMB_nom_medecin" layoutX="139.0" layoutY="118.0" prefWidth="150.0" />
+      <ComboBox fx:id="CMB_nom_patient" layoutX="139.0" layoutY="164.0" prefWidth="150.0" />
+      <ListView fx:id="LSTV_medicament" layoutX="139.0" layoutY="202.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="Display_medicament" layoutX="28.0" layoutY="249.0" prefHeight="63.0" prefWidth="266.0" promptText="Vos médicaments ici" />
+      <Label layoutX="36.0" layoutY="207.0" text="Médicaments" textFill="#3fd6d1">
+         <font>
+            <Font name="Cooper Black" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="BTN_select_med" layoutX="28.0" layoutY="319.0" mnemonicParsing="false" onAction="#selectionner_medicament" text="Selectionner médicament" />
+      <Button fx:id="BTN_clear" layoutX="26.0" layoutY="390.0" mnemonicParsing="false" onAction="#ViderListe" text="Vider la liste" />
+      <Button fx:id="BTN_selectNext" layoutX="28.0" layoutY="354.0" mnemonicParsing="false" onAction="#selectNext" text="Selectionner suivant" />
+      <Button fx:id="BTN_traitement" layoutX="25.0" layoutY="426.0" mnemonicParsing="false" onAction="#Ajouter_traitement" prefHeight="25.0" prefWidth="149.0" text="Ajouter un traitement" />
+   </children>
+</AnchorPane>

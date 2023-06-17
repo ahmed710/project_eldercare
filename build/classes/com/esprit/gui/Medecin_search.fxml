@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="276.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Medecin_searchController">
+   <children>
+      <TableView fx:id="TV_search" layoutX="7.0" layoutY="50.0" prefHeight="198.0" prefWidth="586.0">
+         <columns>
+            <TableColumn fx:id="TC_nom_medecin" prefWidth="120.0" text="Nom médecin" />
+            <TableColumn fx:id="TC_nom_patient" prefWidth="135.0" text="Nom patient" />
+            <TableColumn fx:id="TC_num_ordonnance" prefWidth="131.0" text="numéro ordonnance" />
+            <TableColumn fx:id="TC_date" minWidth="7.0" prefWidth="84.0" text="Date" />
+            <TableColumn fx:id="TC_medicaments" prefWidth="115.0" text="Médicaments" />
+         </columns>
+      </TableView>
+      <TextField fx:id="search_bar" layoutX="165.0" layoutY="14.0" prefHeight="25.0" prefWidth="430.0" />
+      <Label layoutX="14.0" layoutY="18.0" prefHeight="17.0" prefWidth="141.0" text="Entrez le nom du medecin7" />
+   </children>
+</AnchorPane>
