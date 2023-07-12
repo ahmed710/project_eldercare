@@ -138,7 +138,7 @@ public class ServiceCommande implements IService<Commande>{
     public List<Medicament> getMedFromComm(Commande c) {
         List<Medicament> list = new ArrayList<>();
         
-        String req = "SELECT * FROM medicament m JOIN ordonnance o ON m.ID_medicament = o.ID_medicament JOIN commande c ON c.ID_commande = o.Id_Commande WHERE o.Id_Commande="+c.getID_commande();
+        String req = "SELECT * FROM medicament m JOIN ordonnance o ON m.idMedicament = o.ID_medicament JOIN commande c ON c.ID_commande = o.id_Commande WHERE c.id_Commande="+c.getID_commande();
         try {
             PreparedStatement pst = cnx.prepareStatement(req);
             ResultSet rs = pst.executeQuery();

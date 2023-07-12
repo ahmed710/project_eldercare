@@ -1,0 +1,42 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 24 juin 2023, 14:52:05
+    Author     : Wimbee018
+*/
+
+.mainFxmlClass{
+    -fx-background-color:#9fd3c7 ; 
+}
+#datecol{
+ -fx-color: #ACE2F5 ;   
+}
+#adressecol{
+     -fx-color: #ACE2F5 ;   
+}
+#etatcol{
+     -fx-color: #ACE2F5 ;  
+}
+#Pharcol{
+    -fx-color: #ACE2F5 ;
+}
+#day{
+    -fx-color: #ACE2F5 ;
+}
+#month{
+   -fx-color: #ACE2F5 ; 
+}
+#year{
+    -fx-color: #ACE2F5 ;
+}
+#suppButtom{
+    -fx-color: #ACE2F5 ;
+}
+#imprimebutton{
+    -fx-color: #ACE2F5 ;
+}
+#modifButtom{
+    -fx-color: #ACE2F5 ;
+}

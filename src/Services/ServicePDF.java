@@ -10,6 +10,8 @@ import com.itextpdf.text.Font;
 import com.itextpdf.text.FontFactory;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.Phrase;
+import com.itextpdf.text.pdf.ColumnText;
+import com.itextpdf.text.pdf.PdfContentByte;
 import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
@@ -34,6 +36,17 @@ public class ServicePDF {
         PdfWriter.getInstance(doc, new FileOutputStream(file_name));
             
             doc.open();
+            Font titleFont = FontFactory.getFont(FontFactory.HELVETICA_BOLD, 16);
+            Font subtitleFont = FontFactory.getFont(FontFactory.HELVETICA_BOLD, 14);
+            Font tableHeaderFont = FontFactory.getFont(FontFactory.HELVETICA_BOLD, 12);
+            Font cellFont = FontFactory.getFont(FontFactory.HELVETICA, 12);
+            Paragraph header = new Paragraph("Facture", titleFont);
+            header.setAlignment(Element.ALIGN_CENTER);
+            doc.add(header);
+
+   
+
+
             
             // Create a title paragraph
             Paragraph title = new Paragraph("Commande Details", FontFactory.getFont(FontFactory.HELVETICA_BOLD, 16));
@@ -45,7 +58,7 @@ public class ServicePDF {
             
             // Create a table for the details
             PdfPTable table = new PdfPTable(2);
-            table.setWidthPercentage(60);
+            table.setWidthPercentage(80);
             table.setWidths(new int[]{1, 3});
             
             // Add details as table cells
@@ -139,5 +152,6 @@ public class ServicePDF {
         cell.setPadding(5);
         return cell;
     }
+
 }
 

@@ -1,0 +1,33 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 24 juin 2023, 15:03:07
+    Author     : Wimbee018
+*/
+
+.mainFxmlClass{
+    -fx-background-color:#9fd3c7 ; 
+}
+#tfnom{
+ -fx-color: #ACE2F5 ;   
+}
+#tfadresse{
+     -fx-color: #ACE2F5 ;   
+}
+#tftelephone{
+     -fx-color: #ACE2F5 ;  
+}
+#nomcol{
+    -fx-color: #ACE2F5 ;
+}
+#adressecol{
+    -fx-color: #ACE2F5 ;
+}
+#telephonecol{
+   -fx-color: #ACE2F5 ; 
+}
+#tvafficher{
+    -fx-color: #ACE2F5 ;
+}
