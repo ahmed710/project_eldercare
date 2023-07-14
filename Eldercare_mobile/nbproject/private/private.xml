@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/iheb/Documents/NetBeansProjects/Eldercare_mobile/src/com/esprit/utils/Statics.java</file>
+            <file>file:/C:/Users/iheb/Documents/NetBeansProjects/Eldercare_mobile/src/com/esprit/form/Connecter.java</file>
+            <file>file:/C:/Users/iheb/Documents/NetBeansProjects/Eldercare_mobile/src/com/esprit/form/MotdePasseOublierForm.java</file>
+            <file>file:/C:/Users/iheb/Documents/NetBeansProjects/Eldercare_mobile/src/com/esprit/form/ChoixInscription.java</file>
+            <file>jar:file:/C:/Users/iheb/Documents/NetBeansProjects/Eldercare_mobile/lib/CodenameOne_SRC.zip!/com/codename1/ui/validation/RegexConstraint.java</file>
+            <file>file:/C:/Users/iheb/Documents/NetBeansProjects/Eldercare_mobile/src/com/esprit/form/InterfacePatient.java</file>
+            <file>file:/C:/Users/iheb/Documents/NetBeansProjects/Eldercare_mobile/src/com/esprit/Services/ServicePatient.java</file>
+            <file>file:/C:/Users/iheb/Documents/NetBeansProjects/Eldercare_mobile/src/com/esprit/form/InscriptionMedecinForm.java</file>
+            <file>file:/C:/Users/iheb/Documents/NetBeansProjects/Eldercare_mobile/src/com/esprit/Services/IService.java</file>
+            <file>file:/C:/Users/iheb/Documents/NetBeansProjects/Eldercare_mobile/src/com/esprit/entities/User.java</file>
+            <file>file:/C:/Users/iheb/Documents/NetBeansProjects/Eldercare_mobile/src/com/esprit/entities/Medecin.java</file>
+            <file>file:/C:/Users/iheb/Documents/NetBeansProjects/Eldercare_mobile/src/com/esprit/form/MyApplication.java</file>
+            <file>file:/C:/Users/iheb/Documents/NetBeansProjects/Eldercare_mobile/build.xml</file>
+            <file>file:/C:/Users/iheb/Documents/NetBeansProjects/Eldercare_mobile/src/com/esprit/form/LoginForm.java</file>
+            <file>file:/C:/Users/iheb/Documents/NetBeansProjects/Eldercare_mobile/src/com/esprit/form/affichagepatient.java</file>
+            <file>file:/C:/Users/iheb/Documents/NetBeansProjects/Eldercare_mobile/src/com/esprit/entities/Patient.java</file>
+            <file>jar:file:/C:/Users/iheb/Documents/NetBeansProjects/Eldercare_mobile/lib/CodenameOne_SRC.zip!/com/codename1/messaging/Message.java</file>
+            <file>file:/C:/Users/iheb/Documents/NetBeansProjects/Eldercare_mobile/src/com/esprit/Services/ServiceMedecin.java</file>
+            <file>file:/C:/Users/iheb/Documents/NetBeansProjects/Eldercare_mobile/src/com/esprit/form/InscriptionPatientForm.java</file>
+        </group>
+    </open-files>
+</project-private>
