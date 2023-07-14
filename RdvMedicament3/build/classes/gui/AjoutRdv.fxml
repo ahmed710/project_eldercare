@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="512.0" prefWidth="753.0" style="-fx-background-color: #e2fff5;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AjoutRdvController">
+      <stylesheets>
+        <URL value="@AjoutMedicament.css" />
+    </stylesheets>
+    <children>
+      <Button fx:id="btn_ajouter" layoutX="116.0" layoutY="403.0" mnemonicParsing="false" onAction="#ajouterRdv" style="-fx-background-color: #7cacfc;" text="Ajouter" textFill="#333333">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <ChoiceBox fx:id="cbEtat" layoutX="129.0" layoutY="331.0" prefHeight="31.0" prefWidth="166.0" style="-fx-background-color: #ffe5ec;" />
+      <DatePicker fx:id="dpDate" layoutX="129.0" layoutY="147.0" prefHeight="25.0" prefWidth="166.0" style="-fx-background-color: #ffe5ec;" />
+      <Button fx:id="btn_supp" layoutX="212.0" layoutY="403.0" mnemonicParsing="false" onAction="#supprimer" style="-fx-background-color: #7cacfc;" text="Supprimer" textFill="#333333">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <ListView fx:id="lv" layoutX="322.0" layoutY="7.0" prefHeight="427.0" prefWidth="423.0" style="-fx-background-color: #ffe5ec;" />
+      <Button fx:id="btn_modifier" layoutX="17.0" layoutY="403.0" mnemonicParsing="false" onAction="#modifier" style="-fx-background-color: #7cacfc;" text="Modifier" textFill="#333333">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <ComboBox fx:id="tfIdP" layoutX="129.0" layoutY="202.0" prefHeight="31.0" prefWidth="166.0" style="-fx-background-color: #ffe5ec;" />
+      <ComboBox fx:id="tfIdM" layoutX="129.0" layoutY="262.0" prefHeight="31.0" prefWidth="166.0" style="-fx-background-color: #ffe5ec;" />
+      <Button fx:id="btn_retour" layoutX="502.0" layoutY="458.0" mnemonicParsing="false" onAction="#retour" style="-fx-background-color: #FF8EAF;" text="Retour" textFill="#333333">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <Label layoutX="17.0" layoutY="149.0" text="Date:" textFill="#333333">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="207.0" text="Patient:" textFill="#333333">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="267.0" text="Medecin:" textFill="#333333">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="336.0" text="Etat:" textFill="#333333">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_stat" layoutX="652.0" layoutY="458.0" mnemonicParsing="false" onAction="#go_stat" style="-fx-background-color: #04e474;" text="Statistiques" textFill="#333333">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <Label layoutX="13.0" layoutY="43.0" text="Date Debut:" textFill="#333333">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="76.0" text="Date Fin:" textFill="#333333">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="184.0" layoutY="7.0" mnemonicParsing="false" onAction="#Filtrer" style="-fx-background-color: #7cacfc;" text="Filtrer" textFill="#333333">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <Button fx:id="btn_r" layoutX="322.0" layoutY="458.0" mnemonicParsing="false" onAction="#rafraichir" style="-fx-background-color: #7cacfc;" text="Rafraichir" textFill="#333333">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <DatePicker fx:id="dd" layoutX="129.0" layoutY="41.0" prefHeight="25.0" prefWidth="166.0" style="-fx-background-color: #ffe5ec;" />
+      <DatePicker fx:id="df" layoutX="129.0" layoutY="74.0" prefHeight="25.0" prefWidth="166.0" style="-fx-background-color: #ffe5ec;" />
+   </children>
+</AnchorPane>
