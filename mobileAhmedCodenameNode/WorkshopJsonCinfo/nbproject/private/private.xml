@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/21693/Downloads/WorkshopJsonCinfo/src/com/esprit/utils/Statics.java</file>
+            <file>file:/C:/Users/21693/Downloads/WorkshopJsonCinfo/src/com/esprit/services/ServiceMaladie.java</file>
+            <file>file:/C:/Users/21693/Downloads/WorkshopJsonCinfo/src/com/esprit/utils/Classification_fonctionelle.java</file>
+            <file>file:/C:/Users/21693/Downloads/WorkshopJsonCinfo/src/com/esprit/utils/Organe.java</file>
+            <file>file:/C:/Users/21693/Downloads/WorkshopJsonCinfo/src/com/esprit/gui/AjoutSymtomeForm.java</file>
+            <file>file:/C:/Users/21693/Downloads/WorkshopJsonCinfo/src/com/esprit/gui/AjoutPersonneForm.java</file>
+            <file>file:/C:/Users/21693/Downloads/WorkshopJsonCinfo/src/com/esprit/gui/ModifierSymptomeForm.java</file>
+            <file>file:/C:/Users/21693/Downloads/WorkshopJsonCinfo/src/com/esprit/services/IService.java</file>
+            <file>file:/C:/Users/21693/Downloads/WorkshopJsonCinfo/src/com/esprit/gui/OneSymptomeForm.java</file>
+            <file>file:/C:/Users/21693/Downloads/WorkshopJsonCinfo/src/com/esprit/entities/Symptome.java</file>
+            <file>file:/C:/Users/21693/Downloads/WorkshopJsonCinfo/src/com/esprit/gui/AffichePersonnesForm.java</file>
+            <file>file:/C:/Users/21693/Downloads/WorkshopJsonCinfo/src/com/esprit/services/ServiceSymptome.java</file>
+            <file>file:/C:/Users/21693/Downloads/WorkshopJsonCinfo/src/com/esprit/gui/ModifierMaladieForm.java</file>
+            <file>file:/C:/Users/21693/Downloads/WorkshopJsonCinfo/src/com/esprit/pi/MyApplication.java</file>
+            <file>file:/C:/Users/21693/Downloads/WorkshopJsonCinfo/src/com/esprit/gui/AfficheMaladieForm.java</file>
+            <file>file:/C:/Users/21693/Downloads/WorkshopJsonCinfo/src/com/esprit/gui/AjoutMaladieForm.java</file>
+            <file>file:/C:/Users/21693/Downloads/WorkshopJsonCinfo/src/com/esprit/gui/OneMaladieForm.java</file>
+            <file>file:/C:/Users/21693/Downloads/WorkshopJsonCinfo/src/com/esprit/services/ServiceMaladieSymptome.java</file>
+            <file>file:/C:/Users/21693/Downloads/WorkshopJsonCinfo/src/com/esprit/entities/Personne.java</file>
+            <file>file:/C:/Users/21693/Downloads/WorkshopJsonCinfo/src/com/esprit/services/ServicePersonne.java</file>
+            <file>file:/C:/Users/21693/Downloads/WorkshopJsonCinfo/src/com/esprit/utils/Classification_etiologique.java</file>
+            <file>file:/C:/Users/21693/Downloads/WorkshopJsonCinfo/src/com/esprit/gui/HomeForm.java</file>
+            <file>file:/C:/Users/21693/Downloads/WorkshopJsonCinfo/src/com/esprit/entities/Maladie.java</file>
+            <file>jar:file:/C:/Users/21693/Downloads/WorkshopJsonCinfo/lib/CodenameOne_SRC.zip!/com/codename1/ui/Form.java</file>
+            <file>file:/C:/Users/21693/Downloads/WorkshopJsonCinfo/src/com/esprit/gui/AfficheSymptomeForm.java</file>
+            <file>jar:file:/C:/Users/21693/Downloads/WorkshopJsonCinfo/lib/CodenameOne_SRC.zip!/com/codename1/ui/plaf/Style.java</file>
+        </group>
+    </open-files>
+</project-private>
